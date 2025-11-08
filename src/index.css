@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 52% 18%;
+    --foreground: 210 100% 96%;
+    --card: 222 52% 22%;
+    --card-foreground: 210 100% 96%;
+    --popover: 222 52% 22%;
+    --popover-foreground: 210 100% 96%;
+    --primary: 222 52% 18%;
+    --primary-foreground: 210 100% 96%;
+    --secondary: 222 52% 28%;
+    --secondary-foreground: 210 100% 96%;
+    --tertiary: 192 70% 45%;
+    --tertiary-foreground: 210 100% 98%;
+    --neutral: 0 0% 98%;
+    --neutral-foreground: 222 15% 20%;
+    --muted: 220 12% 25%;
+    --muted-foreground: 220 10% 90%;
+    --accent: 258 58% 60%;
+    --accent-foreground: 210 100% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 100% 98%;
+    --success: 142 60% 35%;
+    --warning: 38 90% 48%;
+    --border: 220 12% 25%;
+    --input: 220 12% 25%;
+    --ring: 192 70% 45%;
+  }
+
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 222 15% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 15% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 15% 20%;
+    --primary: 222 52% 18%;
+    --primary-foreground: 210 100% 96%;
+    --secondary: 222 52% 28%;
+    --secondary-foreground: 210 100% 96%;
+    --tertiary: 192 70% 45%;
+    --tertiary-foreground: 210 100% 98%;
+    --neutral: 222 15% 20%;
+    --neutral-foreground: 0 0% 98%;
+    --muted: 220 10% 90%;
+    --muted-foreground: 220 8% 35%;
+    --accent: 258 58% 60%;
+    --accent-foreground: 210 100% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 100% 98%;
+    --success: 142 60% 35%;
+    --warning: 38 90% 48%;
+    --border: 220 10% 90%;
+    --input: 220 10% 90%;
+    --ring: 192 70% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html,
+  body {
+    @apply bg-background text-foreground;
+  }
+}
